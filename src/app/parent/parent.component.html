@@ -1,0 +1,9 @@
+<p>parent works!</p>
+
+<button (click)="hooks()">Button</button>
+<br>
+<br>
+<input type="text" [(ngModel)] ="channelName">
+
+
+<app-child *ngIf="isChild" [channelName]="channelName"></app-child>
